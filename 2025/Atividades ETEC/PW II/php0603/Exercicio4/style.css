@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.form{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(86, 143, 153);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+h2{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.form form{
+    color: rgb(34, 31, 31);
+    font-weight: bold;
+    font-size: larger;
+}
+.text{
+    background-color: rgb(195, 226, 177);
+    border-color: rgb(92, 141, 87);
+}
+.table{
+    margin: auto;
+    margin-bottom: 10%;
+    width: 100%;
+}
+td{
+    height: 100px;
+}
+.form .btn{
+    height: 30px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgb(26, 226, 143);
+    border-color: rgb(8, 204, 8);
+    font-size: large;
+}
+.form .btn:hover{
+    background-color: rgb(36, 236, 153);
+    border-color: rgb(18, 214, 18);
+}

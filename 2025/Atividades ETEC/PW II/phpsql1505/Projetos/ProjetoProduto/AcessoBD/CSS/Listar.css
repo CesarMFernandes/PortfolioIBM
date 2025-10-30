@@ -1,0 +1,96 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 95vh;
+    
+}
+.fundo{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../img/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 40%;
+}
+main{
+    margin-top: 5vh;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+table{
+    box-shadow: 0 0 5px black;
+    margin: auto;
+    width: 80vw;
+    border-collapse: collapse;
+    font-size: 1.5vw;
+    opacity: 80%;
+    color: rgb(220, 234, 247);
+}
+th{
+    width: 33.333%;
+}
+td{
+    padding-left: 3%;
+}
+tr{
+    height: 7vh;
+}
+.cap{
+    background-color: rgb(155, 24, 24);
+}
+.par{
+    background-color: rgb(175, 56, 56);
+}
+.impar{
+    background-color: rgb(219, 68, 68);
+}
+form{
+    position: fixed;
+    bottom: 0.5vh;
+    right: 0.5vw;
+    height: 5vh;
+    width: 5vw;
+}
+input{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(155, 24, 24);
+    color: rgb(220, 234, 247);
+    font-weight: bold;
+    font-size: 1vw;
+}
+input:hover{
+    background-color: rgb(175, 44, 44);
+    cursor: pointer;
+}
+
+@media(max-width: 100vh){
+    p, table{
+        font-size: 150%;
+    }
+    form{
+        height: 10vh;
+        width: 20vw;
+    }
+    input{
+        font-size: 3vw;
+    }
+}
+@media(max-width: 1000px){
+    form{
+        bottom: 5vh;
+        right: 5vw;
+    }
+    input{
+        border-width: 0;
+    }
+}

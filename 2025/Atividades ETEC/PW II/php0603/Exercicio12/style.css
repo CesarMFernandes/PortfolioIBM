@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+.form{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(87, 187, 187);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+.h1form{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.h2form{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.form form{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+}
+.form .text{
+    margin-bottom: 50px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(26, 226, 143);
+    border-color: rgb(8, 204, 8);
+}
+.form .btn:hover{
+    background-color: rgb(36, 236, 153);
+    border-color: rgb(18, 214, 18);
+}
+.aviso{
+    font-size: 10pt;
+}
+.tab{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(cyan, white);
+    text-align: center;
+    width: 500px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.tab .h1form{
+    margin-top: 0;
+}
+.tab .btn{
+    font-size: 10px;
+    width: 50px;
+    margin: 5px;
+}
+.voltar{
+    text-align: left;
+}

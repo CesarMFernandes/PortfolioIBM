@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: rgb(129, 186, 250);
+}
+.form{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(45, 115, 207);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+.form .h1form{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.form form{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+}
+.form .texts{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+.form .text{
+    margin-bottom: 10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}
+.form .desconto{
+    height: 70px;
+    width: 70%;
+    background-color: aliceblue;
+    margin: auto;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    color: black;
+}
+.form .btn{
+    height: 30px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgb(26, 226, 143);
+    border-color: rgb(8, 204, 8);
+}
+.form .btn:hover{
+    background-color: rgb(36, 236, 153);
+    border-color: rgb(18, 214, 18);
+}
+.good{
+    color: rgb(16, 202, 16);
+}
+.evil{
+    color: red;
+}

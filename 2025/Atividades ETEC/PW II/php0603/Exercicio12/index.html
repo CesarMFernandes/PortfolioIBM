@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Impares</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="h1form">Números Ímpares</h1>
+        <h2 class="h2form">Insira o primeiro e último número do intervalo. Será mostrado os números impares do mesmo.</h2>
+        <form name="form1" action="numimpares.php" method="POST">
+            Valor Inicial<br>
+            <input type="number" name="inicial" size="4" required class="text"><br>
+            Valor Final<br>
+            <input type="number" name="final" size="4" required class="text"><br>
+            <input type="submit" value="CONTINUAR" class="btn">
+        </form>
+        <p class="aviso">(inserir números extremamente grandes não é recomendado)</p>
+    </div>
+</body>
+</html>

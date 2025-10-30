@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Media</title>
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="h1form">Média do Aluno</h1>
+        <form name="form1" action="media.php" method="POST">
+            <table class="table">
+                <tr class="top"> 
+                    <td>
+                        1º Bimestre<br>
+                        <input type="text" name="nota1" size="4" required class="text"><br>
+                    </td>
+                    <td>
+                        2º Bimestre<br>
+                        <input type="text" name="nota2" size="4" required class="text"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3º Bimestre<br>
+                        <input type="text" name="nota3" size="4" required class="text"><br>
+                    </td>
+                    <td>
+                        4º Bimestre<br>
+                        <input type="text" name="nota4" size="4" required class="text"><br>
+                    </td>
+                </tr>
+            </table>
+                <input type="submit" value="CALCULAR" class="btn">
+        </form>
+        <p class="nota">Nota Final: </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    font-weight: bold;
+}
+.good{
+    color: rgb(64, 221, 16);
+}
+.evil{
+    color: rgb(255, 0, 0);
+}
+fieldset{
+    width: 25%;
+}

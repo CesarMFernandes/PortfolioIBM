@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="h1form">Calculadora</h1>
+        <div class="resp"></div>
+        <form name="form1" action="calcular.php" method="POST">
+            Primeiro Número: <input type="text" name="num1" size="10" required class="text"><br>
+            Segundo Número: <input type="text" name="num2" size="10" required class="text"><br>
+            Operação: <select name="operacao" required class="text">
+                <option selected disabled hidden></option>
+                <option value="Soma">Soma</option>
+                <option value="Subtração">Subtração</option>
+                <option value="Multiplicação">Multiplicação</option>
+                <option value="Divisão">Divisão</option>
+            </select><br>
+            <input type="submit" value="CALCULAR" class="btn">
+        </form>
+    </div>
+</body>
+</html>

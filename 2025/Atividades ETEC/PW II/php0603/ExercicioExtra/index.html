@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Preenchimento de Dados Pessoais</h1>
+    <form name="form1" action="output.php" method="POST">
+        Nome:<br>
+        <input type="text" name="nome" size="30" maxlength="50" required><br><br>
+        Email:<br>
+        <input type="text" name="email" size="30" maxlength="50" required><br><br>
+        Data de Nascimento:<br>
+        <input type="date" name="data" required><br><br>
+        Gênero:<br>
+        <select name="genero" required>
+            <option selected disabled hidden></option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        Comentários (opcional):<br>
+        <textarea name="com" rows="5" cols="30" maxlength="150"></textarea><br><br>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>

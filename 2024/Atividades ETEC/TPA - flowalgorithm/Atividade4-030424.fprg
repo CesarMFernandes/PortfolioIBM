@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 02:29:16 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6MTk6MTYgIjsyNjI3"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6Mjk6MTYgIjsxOzI3MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Comp" type="Real" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="dm" type="Integer" array="False" size=""/>
+            <declare name="mm" type="Real" array="False" size=""/>
+            <output expression="&quot;Coloque a medida, em cent&#237;metros&quot;" newline="True"/>
+            <input variable="Comp"/>
+            <assign variable="m" expression="Comp / 100"/>
+            <assign variable="Comp" expression="Comp - m * 100"/>
+            <assign variable="dm" expression="Comp / 10"/>
+            <assign variable="Comp" expression="Comp - dm * 10"/>
+            <assign variable="mm" expression="Comp * 10"/>
+            <output expression="&quot;A medida vale &quot; &amp; m &amp; &quot; metros, &quot; &amp; dm &amp; &quot; dec&#237;metros e &quot; &amp; mm &amp; &quot; mil&#237;metros.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

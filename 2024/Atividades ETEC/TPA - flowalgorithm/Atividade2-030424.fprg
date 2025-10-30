@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 02:56:56 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6NDY6NDcgIjsyNjMx"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6NTY6NTYgIjsxOzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="Nota1" type="Real" array="False" size=""/>
+            <declare name="Nota2" type="Real" array="False" size=""/>
+            <declare name="Nota3" type="Real" array="False" size=""/>
+            <declare name="Nota4" type="Real" array="False" size=""/>
+            <declare name="NotaF" type="Real" array="False" size=""/>
+            <output expression="&quot;Coloque o nome completo do aluno&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Coloque a nota do primeiro bimestre&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Coloque a nota do segundo bimestre&quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Coloque a nota do terceiro bimestre&quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <output expression="&quot;Coloque a nota do quarto bimestre&quot;" newline="True"/>
+            <input variable="Nota4"/>
+            <assign variable="NotaF" expression="(Nota1 + Nota2 + Nota3 + Nota4) / 4"/>
+            <if expression="NotaF &lt; 6">
+                <then>
+                    <output expression="&quot;A m&#233;dia do final de &quot; &amp; Nome &amp; &quot; &#233; &quot; &amp; NotaF &amp; &quot;. Ele/Ela ficar&#225; de recupera&#231;&#227;o final.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;A m&#233;dia do final de &quot; &amp; Nome &amp; &quot; &#233; &quot; &amp; NotaF &amp; &quot;. Parab&#233;ns, ele/ela passou de ano!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

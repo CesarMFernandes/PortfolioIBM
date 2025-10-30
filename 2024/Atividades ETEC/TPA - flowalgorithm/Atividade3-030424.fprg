@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 02:45:49 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6Mjk6MzYgIjsyNjMw"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6NDU6NDkgIjsxOzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Seg" type="Real" array="False" size=""/>
+            <declare name="Hor" type="Integer" array="False" size=""/>
+            <declare name="Min" type="Real" array="False" size=""/>
+            <output expression="&quot;Coloque o hor&#225;rio, em segundos (quantos segundos se passaram desde a meia-noite)&quot;" newline="True"/>
+            <input variable="Seg"/>
+            <if expression="Seg &gt; 86400">
+                <then>
+                    <output expression="&quot;N&#250;mero invalido: valor excede quantidade de segundos num dia&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="Hor" expression="Seg / 3600"/>
+                    <assign variable="Seg" expression="Seg - Hor * 3600"/>
+                    <assign variable="Min" expression="Seg / 60"/>
+                    <if expression="Hor &lt; 10">
+                        <then>
+                            <if expression="Min &lt; 10">
+                                <then>
+                                    <output expression="&quot;O hor&#225;rio &#233; &quot; &amp; &quot;0&quot; &amp; Hor &amp; &quot;:&quot; &amp; &quot;0&quot; &amp; Min" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O hor&#225;rio &#233; &quot; &amp; &quot;0&quot; &amp; Hor &amp; &quot;:&quot; &amp; Min" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Min &lt; 10">
+                                <then>
+                                    <output expression="&quot;O hor&#225;rio &#233; &quot; &amp; Hor &amp; &quot;:&quot; &amp; &quot;0&quot; &amp; Min" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;O hor&#225;rio &#233; &quot; &amp; Hor &amp; &quot;:&quot; &amp; Min" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

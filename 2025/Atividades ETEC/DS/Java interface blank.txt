@@ -1,0 +1,20 @@
+package controle;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Login extends JFrame{
+    public Login(){
+        setTitle("Tabela");
+        Container tela = getContentPane();
+        setLayout(null);
+        
+        setSize(900, 675);
+        setResizable(false);
+        setLocationRelativeTo(null);
+    }
+    public static void main(String[] args) {
+        Login pri = new Login();
+        pri.setVisible(true);
+        pri.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }   
+}

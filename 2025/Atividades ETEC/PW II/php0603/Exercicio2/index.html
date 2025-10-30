@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="h1form">Calculador de Desconto</h1>
+        <form name="form1" action="desconto.php" method="POST">
+            <div class="texts">
+                Preço da compra(R$): <input type="text" name="preco" size="7" required class="text"><br>
+                Desconto(%): <input type="text" name="desc" size="3" required class="text"><br>
+            </div>
+            <div class="desconto">Seu desconto é mostrado aqui</div>
+            <input type="submit" value="CALCULAR" class="btn">
+        </form>
+    </div>
+</body>
+</html>

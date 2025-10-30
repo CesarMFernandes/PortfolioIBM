@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-10 02:06:39 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtMQUIxMDItMDI7MjAyNC0wNC0xMDsiMDE6MzY6MDQgIjsyNzkx"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtMQUIxMDItMDI7MjAyNC0wNC0xMDsiMDI6MDY6MzkgIjszOzI5MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CustoI" type="Real" array="False" size=""/>
+            <declare name="CustoF" type="Real" array="False" size=""/>
+            <declare name="Por" type="Real" array="False" size=""/>
+            <declare name="Imp" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o custo da fabricante do carro desejado.&quot;" newline="True"/>
+            <input variable="CustoI"/>
+            <assign variable="Imp" expression="CustoI * (45/100)"/>
+            <assign variable="Por" expression="CustoI * (28/100)"/>
+            <assign variable="CustoF" expression="CustoI + Imp + Por"/>
+            <output expression="&quot;O valor da porcentagem do distribuidor a ser pago &#233; R$&quot; &amp; Por &amp; &quot;.&quot;" newline="True"/>
+            <output expression="&quot;O valor dos impostos a ser pago &#233; R$&quot; &amp; Imp &amp; &quot;.&quot;" newline="True"/>
+            <output expression="&quot;O custo do carro ap&#243;s a aplica&#231;&#227;o de impostos e da porcentagem do distribuidor &#233; R$&quot; &amp; CustoF &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

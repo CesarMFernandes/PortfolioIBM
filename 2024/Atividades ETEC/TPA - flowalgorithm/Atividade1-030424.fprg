@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 03:20:02 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDI6NTk6MzMgIjsyNjMw"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMTI7MjAyNC0wNC0wMzsiMDM6MjA6MDIgIjsxOzI3MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="P" type="String" array="False" size=""/>
+            <declare name="Q" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual produto voc&#234; deseja?&quot;" newline="True"/>
+            <output expression="&quot;Produtos dispon&#237;veis:&quot;" newline="True"/>
+            <output expression="&quot;-Pacote de arroz 1 kg - RS8,00 (digite arroz)&quot;" newline="True"/>
+            <output expression="&quot;-Picanha 1 kg - RS60,00 (digite picanha)&quot;" newline="True"/>
+            <output expression="&quot;-Pacote de balas 500g - RS16,00 (digite balas)&quot;" newline="True"/>
+            <input variable="P"/>
+            <if expression="P = &quot;arroz&quot;">
+                <then>
+                    <output expression="&quot;Coloque a quantidade desejada&quot;" newline="True"/>
+                    <input variable="Q"/>
+                    <output expression="&quot;O custo total ser&#225; RS&quot; &amp; 8 * Q" newline="True"/>
+                </then>
+                <else>
+                    <if expression="P = &quot;picanha&quot;">
+                        <then>
+                            <output expression="&quot;Coloque a quantidade desejada&quot;" newline="True"/>
+                            <input variable="Q"/>
+                            <output expression="&quot;O custo total ser&#225; RS&quot; &amp; 60 * Q" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="P = &quot;balas&quot;">
+                                <then>
+                                    <output expression="&quot;Coloque a quantidade desejada&quot;" newline="True"/>
+                                    <input variable="Q"/>
+                                    <output expression="&quot;O custo total ser&#225; RS&quot; &amp; 16 * Q" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Este produto n&#227;o est&#225; dispon&#237;vel&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
